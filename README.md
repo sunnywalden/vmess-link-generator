@@ -13,11 +13,26 @@ A docker tool for vmess link generating from server config file.
 
 #### Run docker to generate your vmess links
 
-"""bash
+```bash
 
 docker run -it --name vmess-tool -v conf:/opt/vmess-link-tool/conf sunnywalden/vmess-link-generator:latest
 
-"""
+```
+
+
+### Update Alias in link (Option)
+
+If you wanna name your server alias yourself, here it is:
+
+1) copy the link generated without "vmess//"
+
+2) decode it via a base64 tool
+
+3) update "ps" attribute
+
+4) then decode the updated vmess info with tool
+
+5) add "vmess//" prefix.
 
 
 ### Thanks for These Projects
