@@ -15,7 +15,7 @@ A docker tool for vmess link generating from server config file.
 
 ```bash
 
-docker run -it --name vmess-tool -v conf:/opt/vmess-link-tool/conf sunnywalden/vmess-link-generator:latest
+docker run -it --name vmess-tool -v ./conf:/opt/vmess-link-tool/conf sunnywalden/vmess-link-generator:latest
 
 ```
 
